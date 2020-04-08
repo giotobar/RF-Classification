@@ -4,9 +4,11 @@ Abstract
 A comparison of a Convolutional Neural Network and a Recurrent Neural Network was done to characterize Radio Frequency signal classifications for varying Signal-to-Noise-Ratios. The results show that a slight improvement can be achieved using an RNN model, but the reduction of hyperparameters was about 90% when compared to the CNN model. 
 
 1. Introduction
+
 The inspiration for this project is to implement Deep Learning algorithms into non-typical domains. We’ve seen Convolutional Neural Networks and Recurrent Neural Networks have been extensively used in image classification and natural language processing. But how about signal processing domain? There’s been worked done for Radio Frequency (RF) modulation classification [1]. There focus was to create a matched filter Deep learning model capable of extracting features and testing it against signals with varying noise levels. This translate to the term Signal-To-Noise-Ratio (SNR), which is ratio of the desired signal vs the embedded noise. 
 
 1.1. Radar Systems
+
  Radars transmit RF pulsed signal with a carrier frequency and at a short interval. The signal then reflects off the desired targets (which is not always true, since it can also reflect on any object in the environment) and is then received by the Radar. The received signal is embedded in noise. To extract the desired signal, the received signal goes through a matched filter, which maximizes SNR and mitigates the noise level. A well-known matched filter in radar systems is called pulse compression [5].
 
 1.2.  Convolutional Neural Network
@@ -19,6 +21,7 @@ This type of architecture is referred as Convolutional, Long Short-Term Memory, 
 A CNN model and CLDNN model were put on to test against 10 RF signal classification labels.  The goal is to transform the CNN model into CLDNN model and compare results.
 
 3. Discussion
+
 The CNN model used for this project was influenced by the model used in this paper [1]. However, changes were made to the number of filters, filter sizes and hidden units for personal understanding. Since the data is relatively simple, if you plot the I/Q data it shows dots on a spatial map. The initial thought was to start with a small number of filters, since the complexity of the data was not of the same level as an image. However, the number of filters were then increased to improve validation loss. The CNN model was designed with the first layer having 64 filters, next layer having 80 filters, then passing the output of the CNN layer into a FC layer with 128 neurons and a second FC layer with 10 neurons. 
 The filter sizes for each CNN layer were chosen to be have a width of 3. This was done to extract as much feature as possible without increasing the number hyperparameters. Additionally, the height of the filters was designed to be larger in the initial CNN layer and then smaller in the next layer. The original paper used the same filter size, but the larger filter was applied to the second CNN layer. The idea was to obtain simultaneous features from I and Q channels. As shown in original paper [1], there were more noticeable features in the weights from the (2x3) than from the (1x3) filter. Which led to use a (2x3) filter size at the beginning instead of a (1x3) filter size.
 Multiple CNN models were tested against the data, most of the results were giving an overfit or underfit effect. Regularization, such as Dropout, was implemented into the model. However, other methods of regularization were used, such as Batch Normalization, but no improvements were found. Even using a combination of Dropout and Batch Norm was not effective in preventing overfitting or improving validation accuracy. Another issue encountered with Dropout was that it was causing the testing loss to always be lower than training loss. To mitigate this result, Dropout was removed from the FC layers. 
