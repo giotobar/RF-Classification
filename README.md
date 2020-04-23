@@ -79,7 +79,7 @@ From the results shown, there&#39;s a slight improvement in accuracy on some of 
 
 Further experimentation is needed to improve the CLDNN model. Since it seems to show that maybe adding depth, instead of increasing the number of hyperparameters, can improve performance. As a result, reduce the size of the model, but not its complexity.
 
-1. References
+# References
 
 1. T. J. O&#39;Shea, J Corgan and T. C. Clancy. Convolutional Radio Modulation Recognition Networks. [https://arxiv.org/pdf/1602.04105.pdf](https://arxiv.org/pdf/1602.04105.pdf). 10 Jun 2016
 
@@ -90,7 +90,7 @@ Further experimentation is needed to improve the CLDNN model. Since it seems to 
 1. T. N. Sainath, O, Vinyals, A. Senior, H. Sak. Convolutional, Long Short-Term Memory, Fully Connected Deep Neural Networks. [https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43455.pdf](https://static.googleusercontent.com/media/research.google.com/en/pubs/archive/43455.pdf) .
 
 1. C. Wolf. Intrapulse Modulation and Pulse Compression. [https://www.radartutorial.eu/08.transmitters/Intrapulse%20Modulation.en.html](https://www.radartutorial.eu/08.transmitters/Intrapulse%20Modulation.en.html).
-
+# Table
 | Model | Training Loss | Training Accuracy | Validation Loss | Validation Accuracy | Notes |
 | --- | --- | --- | --- | --- | --- |
 | CNN+FC (1) | 1.0817 | 0.5550 | 1.0944 | 0.5405 | CNN layers were 32 and 64.Filter size was (1x3) on every layerFC layers were 128 and 10 |
