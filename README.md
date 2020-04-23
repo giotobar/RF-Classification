@@ -11,7 +11,7 @@ The inspiration for this project is to implement Deep Learning algorithms into n
 
 ## 1.1.Radar Systems
 
-Radars transmit RF pulsed signal with a carrier frequency and at a short interval. The signal then reflects off the desired targets (which is not always true since it can also reflect on any object in the environment) and is then received by the radar. The received signal is embedded in noise. To extract the desired signal, the received signal goes through a matched filter, which maximizes SNR and mitigates the noise level. A well-known matched filter in radar systems is called pulse compression [5].
+Radars transmit RF pulsed signal with a carrier frequency and at a short interval. The signal then reflects off the desired targets and is then received by the radar. The received signal is embedded in noise. To extract the desired signal, the received signal goes through a matched filter, which maximizes SNR and mitigates the noise level. A well-known matched filter in radar systems is called pulse compression [5].
 
 ## 1. Convolutional Neural Network
 
