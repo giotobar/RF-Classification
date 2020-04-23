@@ -11,9 +11,9 @@ The inspiration for this project is to implement Deep Learning algorithms into n
 
 ## 1.1.Radar Systems
 
-My line of work mainly focuses on Radar systems capable of detecting, tracking and locating enemy fire. Radars transmit RF pulsed signal with a carrier frequency and at a short interval. The signal then reflects off the desired targets (which is not always true since it can also reflect on any object in the environment) and is then received by the radar. The received signal is embedded in noise. To extract the desired signal, the received signal goes through a matched filter, which maximizes SNR and mitigates the noise level. A well-known matched filter in radar systems is called pulse compression [5].
+Radars transmit RF pulsed signal with a carrier frequency and at a short interval. The signal then reflects off the desired targets (which is not always true since it can also reflect on any object in the environment) and is then received by the radar. The received signal is embedded in noise. To extract the desired signal, the received signal goes through a matched filter, which maximizes SNR and mitigates the noise level. A well-known matched filter in radar systems is called pulse compression [5].
 
-  1. Convolutional Neural Network
+## 1. Convolutional Neural Network
 
 CNN architectures have been extensively used in image classification and natural language processing [1]. However, there may be other applications outside of these domains. In this project, CNN architectures are used to extract features from I/Q datasets. As a result, this model would then be tested against varying SNR levels, meaning a variation of noise levels across the data. The goal of the model is to identify, with a high accuracy, the top-1 modulation label.
 
