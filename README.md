@@ -35,23 +35,19 @@ The following results are shown in 2 sub-sections. Each sub-section shows the re
 
 The following plots show the loss values for each epoch and the confusion matrix containing the probability values for each classification label:
 
-![](RackMultipart20200423-4-lznwod_html_6b364de1d0d6d83f.png)
+![CNN_conf_2](https://user-images.githubusercontent.com/61941555/80054311-df328600-84ec-11ea-8145-6d266f2b66c0.png)
 
-Fig1: CNN Model Loss
+Fig1: CNN Model 
 
 ![](RackMultipart20200423-4-lznwod_html_22877d8727b3c13d.png)
 
-Fig. 2: Confusion Matrix for all SNR values
 
 ## 2.2.CLDNN model
 
 ![](RackMultipart20200423-4-lznwod_html_cf5a9009454db09c.png)
 
-Fig. 3: CLDNN Model Loss
+Fig. 3: CLDNN Model
 
-![](RackMultipart20200423-4-lznwod_html_f16e580f69ccfe5e.png)
-
-Fig 4: Confusion Matrix for all SNR values
 
 ## 3.Discussion
 
