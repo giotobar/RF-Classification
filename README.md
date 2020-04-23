@@ -27,7 +27,7 @@ This type of architecture is referred to as Convolutional, Long Short-Term Memor
 
 A CNN model and CLDNN model were put on to test against 10 RF signal classification labels. The goal is to transform the CNN model into CLDNN model and compare results.
 
-# 2.Results
+## 2.Results
 
 The following results are shown in 2 sub-sections. Each sub-section shows the results for a 70/30 data split.
 
