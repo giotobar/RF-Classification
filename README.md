@@ -3,7 +3,7 @@
 
 **Abstract**
 
-_A comparison of a Convolutional Neural Network and a Recurrent Neural Network was done to characterize Radio Frequency signal classifications for varying Signal-to-Noise-Ratios. The results show that a slight improvement can be achieved using an RNN model, but the reduction of hyperparameters was about 90% when compared to the CNN model._
+_A comparison of a Convolutional Neural Network and a Recurrent Neural Network was done to characterize Radio Frequency signal classifications for varying Signal-to-Noise-Ratios. The results show that a slight improvement can be achieved using a RNN model, but the reduction of hyperparameters was about 90% when compared to the CNN model._
 
 ## 1.Introduction
 
