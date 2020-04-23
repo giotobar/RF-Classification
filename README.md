@@ -1,11 +1,11 @@
-**RNN approach for Radio Frequency Signal Classification**
+ # RNN approach for Radio Frequency Signal Classification
 
 
 **Abstract**
 
 _A comparison of a Convolutional Neural Network and a Recurrent Neural Network was done to characterize Radio Frequency signal classifications for varying Signal-to-Noise-Ratios. The results show that a slight improvement can be achieved using an RNN model, but the reduction of hyperparameters was about 90% when compared to the CNN model._
 
-# 1.Introduction
+## 1.Introduction
 
 The inspiration for this project is to implement Deep Learning algorithms into non-typical domains. We&#39;ve seen Convolutional Neural Networks and Recurrent Neural Networks have been extensively used in image classification and natural language processing. But how about signal processing domain? There&#39;s been worked done for Radio Frequency (RF) modulation classification [1]. Their focus was to create a matched filter Deep learning model capable of extracting features and testing it against signals with varying noise levels. This translate to the term Signal-To-Noise-Ratio (SNR), which is ratio of the desired signal vs the embedded noise.
 
@@ -53,7 +53,7 @@ Fig. 3: CLDNN Model Loss
 
 Fig 4: Confusion Matrix for all SNR values
 
-# 3.Discussion
+## 3.Discussion
 
 The CNN model used for this project was influenced by the model used in this paper [1]. However, changes were made to the number of filters, filter sizes and hidden units for personal understanding. Since the data is relatively simple, if you plot the I/Q data it shows dots on a spatial map. The initial thought was to start with a small number of filters, since the complexity of the data was not of the same level as an image. However, the number of filters were then increased to improve validation loss. The CNN model was designed with the first layer having 64 filters, next layer having 80 filters, then passing the output of the CNN layer into a FC layer with 128 neurons and a second FC layer with 10 neurons.
 
@@ -79,7 +79,7 @@ From the results shown, there&#39;s a slight improvement in accuracy on some of 
 
 Further experimentation is needed to improve the CLDNN model. Since it seems to show that maybe adding depth, instead of increasing the number of hyperparameters, can improve performance. As a result, reduce the size of the model, but not its complexity.
 
-# References
+## References
 
 1. T. J. O&#39;Shea, J Corgan and T. C. Clancy. Convolutional Radio Modulation Recognition Networks. [https://arxiv.org/pdf/1602.04105.pdf](https://arxiv.org/pdf/1602.04105.pdf). 10 Jun 2016
 
@@ -90,7 +90,7 @@ Further experimentation is needed to improve the CLDNN model. Since it seems to 
 1. T. N. Sainath, O, Vinyals, A. Senior, H. Sak. Convolutional, Long Short-Term Memory, Fully Connected Deep Neural Networks. [https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43455.pdf](https://static.googleusercontent.com/media/research.google.com/en/pubs/archive/43455.pdf) .
 
 1. C. Wolf. Intrapulse Modulation and Pulse Compression. [https://www.radartutorial.eu/08.transmitters/Intrapulse%20Modulation.en.html](https://www.radartutorial.eu/08.transmitters/Intrapulse%20Modulation.en.html).
-# Table
+## Table
 | Model | Training Loss | Training Accuracy | Validation Loss | Validation Accuracy | Notes |
 | --- | --- | --- | --- | --- | --- |
 | CNN+FC (1) | 1.0817 | 0.5550 | 1.0944 | 0.5405 | CNN layers were 32 and 64.Filter size was (1x3) on every layerFC layers were 128 and 10 |
