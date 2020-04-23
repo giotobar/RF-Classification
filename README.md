@@ -46,7 +46,7 @@ Fig1: CNN Model
 
 ![LSTM_confusion](https://user-images.githubusercontent.com/61941555/80054451-48b29480-84ed-11ea-8fb3-01e66f1ab8e8.png)
 
-Fig. 3: CLDNN Model
+Fig. 2: CLDNN Model
 
 
 ## 3.Discussion
