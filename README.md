@@ -39,12 +39,12 @@ The following plots show the loss values for each epoch and the confusion matrix
 
 Fig1: CNN Model 
 
-![](RackMultipart20200423-4-lznwod_html_22877d8727b3c13d.png)
+
 
 
 ## 2.2.CLDNN model
 
-![](RackMultipart20200423-4-lznwod_html_cf5a9009454db09c.png)
+![LSTM_confusion](https://user-images.githubusercontent.com/61941555/80054451-48b29480-84ed-11ea-8fb3-01e66f1ab8e8.png)
 
 Fig. 3: CLDNN Model
 
