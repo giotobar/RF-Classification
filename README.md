@@ -102,8 +102,3 @@ Further experimentation is needed to improve the CLDNN model. Since it seems to 
 | CNN+LSTM+FC (2) | 1.1975 | 0.5043 | 1.1425 | 0.5362 | 2 CNN layers and 1 LSTM layer have 64 filters/units.Filter size was (1x5) on every layer.Dropout on each input of the layersFC layers were 128 and 10.Performance was not saved. |
 | CNN+LSTM+FC (3) | 1.0255 | 0.5782 | 1.0453 | 0.5682 | 3 CNN layers and 1 LSTM layer have 64 filters/units.Filter size was (1x3) on every layer.FC layers were 128 and 10.Performance was not saved. |
 
-1. Table
-
-1. F ![](RackMultipart20200423-4-lznwod_html_cbdcd535a3519c57.png) igures
-
-![](RackMultipart20200423-4-lznwod_html_93941dcd92a8e0d8.png) ![](RackMultipart20200423-4-lznwod_html_2e1172c4c1c027ea.png) ![](RackMultipart20200423-4-lznwod_html_92772bd14bba764.png) ![](RackMultipart20200423-4-lznwod_html_f62759522bed90e6.png) ![](RackMultipart20200423-4-lznwod_html_7d329f9678cdf5e3.png) ![](RackMultipart20200423-4-lznwod_html_3bb1ee41d0ddd2f0.png) ![](RackMultipart20200423-4-lznwod_html_1d07bb6a257d67c1.png)
